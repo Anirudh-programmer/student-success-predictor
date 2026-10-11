@@ -1,0 +1,76 @@
+# ==============================================================================
+# Student Success Predictor — Root .gitignore
+# ==============================================================================
+
+# Environment and Secret Files
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+frontend/.env
+backend/.env
+
+# Python Cache and Build
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node & Frontend Build
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Streamlit Local Cache & Secrets
+.streamlit/secrets.toml
+
+# IDE & Editor Configs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IMPORTANT: Ensure backend ML model pipeline & metadata artifacts are tracked for Render
+!backend/artifacts/
+!backend/artifacts/*

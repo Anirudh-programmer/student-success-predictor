@@ -1,0 +1,97 @@
+[
+  {
+    "feature": "Attendance",
+    "importance_mae_increase": 2.3372,
+    "std": 0.0362
+  },
+  {
+    "feature": "Hours_Studied",
+    "importance_mae_increase": 1.7035,
+    "std": 0.0265
+  },
+  {
+    "feature": "Access_to_Resources",
+    "importance_mae_increase": 0.5506,
+    "std": 0.0126
+  },
+  {
+    "feature": "Previous_Scores",
+    "importance_mae_increase": 0.5388,
+    "std": 0.0058
+  },
+  {
+    "feature": "Parental_Involvement",
+    "importance_mae_increase": 0.5214,
+    "std": 0.015
+  },
+  {
+    "feature": "Tutoring_Sessions",
+    "importance_mae_increase": 0.4347,
+    "std": 0.0114
+  },
+  {
+    "feature": "Family_Income",
+    "importance_mae_increase": 0.2136,
+    "std": 0.0096
+  },
+  {
+    "feature": "Parental_Education_Level",
+    "importance_mae_increase": 0.2091,
+    "std": 0.0082
+  },
+  {
+    "feature": "Peer_Influence",
+    "importance_mae_increase": 0.2088,
+    "std": 0.0035
+  },
+  {
+    "feature": "Motivation_Level",
+    "importance_mae_increase": 0.2,
+    "std": 0.0025
+  },
+  {
+    "feature": "Teacher_Quality",
+    "importance_mae_increase": 0.1521,
+    "std": 0.0086
+  },
+  {
+    "feature": "Distance_from_Home",
+    "importance_mae_increase": 0.148,
+    "std": 0.0042
+  },
+  {
+    "feature": "Extracurricular_Activities",
+    "importance_mae_increase": 0.1168,
+    "std": 0.0034
+  },
+  {
+    "feature": "Learning_Disabilities",
+    "importance_mae_increase": 0.0856,
+    "std": 0.001
+  },
+  {
+    "feature": "Physical_Activity",
+    "importance_mae_increase": 0.082,
+    "std": 0.007
+  },
+  {
+    "feature": "Internet_Access",
+    "importance_mae_increase": 0.0799,
+    "std": 0.0045
+  },
+  {
+    "feature": "Gender",
+    "importance_mae_increase": 0.0002,
+    "std": 0.0003
+  },
+  {
+    "feature": "School_Type",
+    "importance_mae_increase": -0.0001,
+    "std": 0.0002
+  },
+  {
+    "feature": "Sleep_Hours",
+    "importance_mae_increase": -0.0004,
+    "std": 0.0002
+  }
+]

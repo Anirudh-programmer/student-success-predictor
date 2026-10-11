@@ -1,0 +1,173 @@
+{
+  "target_column": "Exam_Score",
+  "total_records": 6607,
+  "mean": 67.24,
+  "median": 67.0,
+  "std": 3.89,
+  "min": 55.0,
+  "max": 101.0,
+  "iqr": 4.0,
+  "bins": [
+    {
+      "bin_range": "55-57",
+      "bin_start": 55.0,
+      "bin_end": 57.0,
+      "count": 2,
+      "percentage": 0.03
+    },
+    {
+      "bin_range": "57-59",
+      "bin_start": 57.0,
+      "bin_end": 59.0,
+      "count": 26,
+      "percentage": 0.39
+    },
+    {
+      "bin_range": "59-61",
+      "bin_start": 59.0,
+      "bin_end": 61.0,
+      "count": 117,
+      "percentage": 1.77
+    },
+    {
+      "bin_range": "61-63",
+      "bin_start": 61.0,
+      "bin_end": 63.0,
+      "count": 435,
+      "percentage": 6.58
+    },
+    {
+      "bin_range": "63-65",
+      "bin_start": 63.0,
+      "bin_end": 65.0,
+      "count": 872,
+      "percentage": 13.2
+    },
+    {
+      "bin_range": "65-67",
+      "bin_start": 65.0,
+      "bin_end": 67.0,
+      "count": 1430,
+      "percentage": 21.64
+    },
+    {
+      "bin_range": "67-69",
+      "bin_start": 67.0,
+      "bin_end": 69.0,
+      "count": 1476,
+      "percentage": 22.34
+    },
+    {
+      "bin_range": "69-71",
+      "bin_start": 69.0,
+      "bin_end": 71.0,
+      "count": 1166,
+      "percentage": 17.65
+    },
+    {
+      "bin_range": "71-73",
+      "bin_start": 71.0,
+      "bin_end": 73.0,
+      "count": 712,
+      "percentage": 10.78
+    },
+    {
+      "bin_range": "73-75",
+      "bin_start": 73.0,
+      "bin_end": 75.0,
+      "count": 247,
+      "percentage": 3.74
+    },
+    {
+      "bin_range": "75-77",
+      "bin_start": 75.0,
+      "bin_end": 77.0,
+      "count": 64,
+      "percentage": 0.97
+    },
+    {
+      "bin_range": "77-79",
+      "bin_start": 77.0,
+      "bin_end": 79.0,
+      "count": 9,
+      "percentage": 0.14
+    },
+    {
+      "bin_range": "79-81",
+      "bin_start": 79.0,
+      "bin_end": 81.0,
+      "count": 8,
+      "percentage": 0.12
+    },
+    {
+      "bin_range": "81-83",
+      "bin_start": 81.0,
+      "bin_end": 83.0,
+      "count": 4,
+      "percentage": 0.06
+    },
+    {
+      "bin_range": "83-85",
+      "bin_start": 83.0,
+      "bin_end": 85.0,
+      "count": 4,
+      "percentage": 0.06
+    },
+    {
+      "bin_range": "85-87",
+      "bin_start": 85.0,
+      "bin_end": 87.0,
+      "count": 5,
+      "percentage": 0.08
+    },
+    {
+      "bin_range": "87-89",
+      "bin_start": 87.0,
+      "bin_end": 89.0,
+      "count": 5,
+      "percentage": 0.08
+    },
+    {
+      "bin_range": "89-91",
+      "bin_start": 89.0,
+      "bin_end": 91.0,
+      "count": 3,
+      "percentage": 0.05
+    },
+    {
+      "bin_range": "91-93",
+      "bin_start": 91.0,
+      "bin_end": 93.0,
+      "count": 3,
+      "percentage": 0.05
+    },
+    {
+      "bin_range": "93-95",
+      "bin_start": 93.0,
+      "bin_end": 95.0,
+      "count": 6,
+      "percentage": 0.09
+    },
+    {
+      "bin_range": "95-97",
+      "bin_start": 95.0,
+      "bin_end": 97.0,
+      "count": 3,
+      "percentage": 0.05
+    },
+    {
+      "bin_range": "97-99",
+      "bin_start": 97.0,
+      "bin_end": 99.0,
+      "count": 6,
+      "percentage": 0.09
+    },
+    {
+      "bin_range": "99-101",
+      "bin_start": 99.0,
+      "bin_end": 101.0,
+      "count": 4,
+      "percentage": 0.06
+    }
+  ]
+}

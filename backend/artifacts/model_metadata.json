@@ -1,0 +1,148 @@
+{
+  "model_name": "Tuned Ridge Regression",
+  "algorithm": "Ridge",
+  "alpha": 7.8476,
+  "target_column": "Exam_Score",
+  "dataset_size": 6607,
+  "train_samples": 5285,
+  "test_samples": 1322,
+  "observed_target_min": 55.0,
+  "observed_target_max": 101.0,
+  "observed_target_mean": 67.23565914938702,
+  "observed_target_median": 67.0,
+  "evaluation_metrics": {
+    "held_out_test_mae": 0.4523,
+    "held_out_test_rmse": 1.8042,
+    "held_out_test_r2": 0.7697,
+    "train_mae": 0.4984,
+    "baseline_test_mae": 2.8235,
+    "baseline_test_rmse": 3.7611,
+    "mae_improvement_percent": 83.98,
+    "generalization_gap_mae": 0.0461
+  },
+  "feature_schema": {
+    "numerical_features": [
+      "Hours_Studied",
+      "Attendance",
+      "Sleep_Hours",
+      "Previous_Scores",
+      "Tutoring_Sessions",
+      "Physical_Activity"
+    ],
+    "categorical_features": [
+      "Parental_Involvement",
+      "Access_to_Resources",
+      "Extracurricular_Activities",
+      "Motivation_Level",
+      "Internet_Access",
+      "Family_Income",
+      "Teacher_Quality",
+      "School_Type",
+      "Peer_Influence",
+      "Learning_Disabilities",
+      "Parental_Education_Level",
+      "Distance_from_Home",
+      "Gender"
+    ],
+    "numerical_ranges": {
+      "Hours_Studied": {
+        "min": 1.0,
+        "max": 44.0,
+        "mean": 19.975329196306948,
+        "median": 20.0
+      },
+      "Attendance": {
+        "min": 60.0,
+        "max": 100.0,
+        "mean": 79.97744816104132,
+        "median": 80.0
+      },
+      "Sleep_Hours": {
+        "min": 4.0,
+        "max": 10.0,
+        "mean": 7.029060087785682,
+        "median": 7.0
+      },
+      "Previous_Scores": {
+        "min": 50.0,
+        "max": 100.0,
+        "mean": 75.07053125472983,
+        "median": 75.0
+      },
+      "Tutoring_Sessions": {
+        "min": 0.0,
+        "max": 8.0,
+        "mean": 1.4937187831088239,
+        "median": 1.0
+      },
+      "Physical_Activity": {
+        "min": 0.0,
+        "max": 6.0,
+        "mean": 2.9676101104888755,
+        "median": 3.0
+      }
+    },
+    "categorical_options": {
+      "Parental_Involvement": [
+        "High",
+        "Low",
+        "Medium"
+      ],
+      "Access_to_Resources": [
+        "High",
+        "Low",
+        "Medium"
+      ],
+      "Extracurricular_Activities": [
+        "No",
+        "Yes"
+      ],
+      "Motivation_Level": [
+        "High",
+        "Low",
+        "Medium"
+      ],
+      "Internet_Access": [
+        "No",
+        "Yes"
+      ],
+      "Family_Income": [
+        "High",
+        "Low",
+        "Medium"
+      ],
+      "Teacher_Quality": [
+        "High",
+        "Low",
+        "Medium"
+      ],
+      "School_Type": [
+        "Private",
+        "Public"
+      ],
+      "Peer_Influence": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "Learning_Disabilities": [
+        "No",
+        "Yes"
+      ],
+      "Parental_Education_Level": [
+        "College",
+        "High School",
+        "Postgraduate"
+      ],
+      "Distance_from_Home": [
+        "Far",
+        "Moderate",
+        "Near"
+      ],
+      "Gender": [
+        "Female",
+        "Male"
+      ]
+    }
+  }
+}

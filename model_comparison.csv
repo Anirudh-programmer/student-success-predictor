@@ -1,0 +1,10 @@
+Model,Train_MAE,Test_MAE,Test_RMSE,Test_R2,MAE_Improvement_vs_Baseline_%
+Ridge Regression (Tuned),0.4984,0.4523,1.8042,0.7697,83.98
+Ridge Regression (Default),0.4984,0.4524,1.8044,0.7697,83.98
+Gradient Boosting (Tuned),0.6398,0.6911,1.9058,0.743,75.52
+Gradient Boosting (Default),0.6398,0.7602,1.9365,0.7347,73.08
+HistGradientBoosting,0.6099,0.7746,1.9439,0.7327,72.57
+Random Forest (Tuned),0.5788,1.0584,2.1181,0.6826,62.52
+Extra Trees (Default),0.757,1.1497,2.1423,0.6753,59.28
+Random Forest (Default),0.7278,1.1518,2.1946,0.6593,59.21
+Dummy (Mean Baseline),2.8525,2.8235,3.7611,-0.0007,0.0
