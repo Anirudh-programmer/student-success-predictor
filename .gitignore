@@ -23,8 +23,9 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+# Python build directories (root-level only)
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -74,3 +75,8 @@ desktop.ini
 # IMPORTANT: Ensure backend ML model pipeline & metadata artifacts are tracked for Render
 !backend/artifacts/
 !backend/artifacts/*
+
+# IMPORTANT: Ensure frontend src/lib is tracked
+!frontend/src/lib/
+!frontend/src/lib/*
+
