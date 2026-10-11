@@ -32,15 +32,29 @@ app = FastAPI(
 # -------------------------------------------------------------
 # CORS Configuration
 # -------------------------------------------------------------
-# Reads comma-separated list of origins from environment variable
-cors_env = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173")
-allowed_origins: List[str] = [origin.strip() for origin in cors_env.split(",") if origin.strip()]
+# Default development and production origins
+default_origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:3000",
+    "https://student-success-predictor-ruby.vercel.app",
+    "https://student-success-predictor.vercel.app",
+]
+
+cors_env = os.getenv("CORS_ORIGINS", "")
+if cors_env.strip():
+    env_origins = [origin.strip().rstrip("/") for origin in cors_env.split(",") if origin.strip()]
+    allowed_origins = list(dict.fromkeys(default_origins + env_origins))
+else:
+    allowed_origins = default_origins
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
+    allow_origin_regex=r"^https://.*\.vercel\.app$",
     allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
@@ -48,6 +62,22 @@ app.add_middleware(
 # -------------------------------------------------------------
 # API Endpoints
 # -------------------------------------------------------------
+
+@app.get(
+    "/",
+    summary="Root status and navigation",
+    tags=["System"]
+)
+def root():
+    """Root endpoint verifying API availability and linking to interactive docs."""
+    return {
+        "status": "ok",
+        "service": "Student Success Predictor API",
+        "version": "1.0.0",
+        "model_ready": ml_service.is_ready,
+        "docs": "/docs",
+        "health": "/health"
+    }
 
 @app.get(
     "/health",

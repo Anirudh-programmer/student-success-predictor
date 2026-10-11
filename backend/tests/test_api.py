@@ -35,6 +35,29 @@ VALID_STUDENT_PAYLOAD = {
 }
 
 
+def test_root_endpoint():
+    """Verify root endpoint returns status 200 with service and doc links."""
+    response = client.get("/")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["status"] == "ok"
+    assert "Student Success Predictor API" in data["service"]
+    assert data["model_ready"] is True
+
+
+def test_cors_headers_for_vercel():
+    """Verify that requests with Vercel origin return appropriate CORS headers."""
+    response = client.options(
+        "/api/v1/metrics",
+        headers={
+            "Origin": "https://student-success-predictor-ruby.vercel.app",
+            "Access-Control-Request-Method": "GET"
+        }
+    )
+    assert response.status_code == 200
+    assert response.headers.get("access-control-allow-origin") == "https://student-success-predictor-ruby.vercel.app"
+
+
 def test_health_endpoint():
     """Verify health endpoint returns status 200 and model readiness."""
     response = client.get("/health")
